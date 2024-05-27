@@ -1,9 +1,17 @@
 <?xml version="1.0"?>
 <package format="2">
-    <name>robot_description</name>
-    <version>0.0.1</version>
-    <description>robot_description</description>
-    <maintainer email="limx@limxdynamics.com">max</maintainer>
-    <license>TODO</license>
-    <buildtool_depend>catkin</buildtool_depend>
+  <name>robot_description</name>
+  <version>0.0.0</version>
+  <description>robot_description</description>
+  <maintainer email="limx@limxdynamics.com">limxdynamics</maintainer>
+  <license>TODO</license>
+  <buildtool_depend >catkin</buildtool_depend>
+  <build_depend >roscpp</build_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <exec_depend >roscpp</exec_depend>
+
+  <buildtool_depend >ament_cmake</buildtool_depend>
+  <build_depend >rclcpp</build_depend>
+  <build_export_depend>rclcpp</build_export_depend>
+  <exec_depend >rclcpp</exec_depend>
 </package>
