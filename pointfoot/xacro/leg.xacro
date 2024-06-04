@@ -82,7 +82,7 @@
                 rpy="0 0 0"/>
             <parent link="hip_${name}_Link"/>
             <child link="knee_${name}_Link"/>
-            <axis xyz="0 ${mirror} 0"/>
+            <axis xyz="0 ${-mirror} 0"/>
             <dynamics damping="${damping}" friction="${friction}"/>
             <xacro:if value="${(mirror_STL == True)}">
                 <limit effort="${knee_torque_max}" velocity="${knee_velocity_max}" lower="${knee_min*PI/180.0}" upper="${knee_max*PI/180.0}"/>

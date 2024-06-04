@@ -11,8 +11,8 @@
                     <param name="max">1.39626</param>
                 </command_interface> 
                 <command_interface name="velocity">
-                    <param name="min">-15</param>
-                    <param name="max">15</param>
+                    <param name="min">-20</param>
+                    <param name="max">20</param>
                 </command_interface>
                 <command_interface name="effort">
                     <param name="min">-80</param>
@@ -35,8 +35,8 @@
                     <param name="max">1.396263</param>
                 </command_interface> 
                 <command_interface name="velocity">
-                    <param name="min">-15</param>
-                    <param name="max">15</param>
+                    <param name="min">-20</param>
+                    <param name="max">20</param>
                 </command_interface>
                 <command_interface name="effort">
                     <param name="min">-80</param>
@@ -59,8 +59,8 @@
                     <param name="max">1.361357</param>
                 </command_interface> 
                 <command_interface name="velocity">
-                    <param name="min">-15</param>
-                    <param name="max">15</param>
+                    <param name="min">-20</param>
+                    <param name="max">20</param>
                 </command_interface>
                 <command_interface name="effort">
                     <param name="min">-80</param>
@@ -85,8 +85,8 @@
                     <param name="max">0.38397</param>
                 </command_interface> 
                 <command_interface name="velocity">
-                    <param name="min">-15</param>
-                    <param name="max">15</param>
+                    <param name="min">-20</param>
+                    <param name="max">20</param>
                 </command_interface>
                 <command_interface name="effort">
                     <param name="min">-80</param>
@@ -109,8 +109,8 @@
                     <param name="max">1.012291</param>
                 </command_interface> 
                 <command_interface name="velocity">
-                    <param name="min">-15</param>
-                    <param name="max">15</param>
+                    <param name="min">-20</param>
+                    <param name="max">20</param>
                 </command_interface>
                 <command_interface name="effort">
                     <param name="min">-80</param>
@@ -133,8 +133,8 @@
                     <param name="max">0.872665</param>
                 </command_interface> 
                 <command_interface name="velocity">
-                    <param name="min">-15</param>
-                    <param name="max">15</param>
+                    <param name="min">-20</param>
+                    <param name="max">20</param>
                 </command_interface>
                 <command_interface name="effort">
                     <param name="min">-80</param>
