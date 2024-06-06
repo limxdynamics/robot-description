@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 
-<robot name="pointfoot" xmlns:xacro="http://www.ros.org/wiki/xacro">
-
+<robot name="pointfoot_description" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:arg name="use_gazebo" default="false"/>
+    <xacro:arg name="use_support" default="false"/>
     <xacro:include filename="$(find robot_description)/pointfoot/xacro/const.xacro"/>
     <xacro:include filename="$(find robot_description)/pointfoot/xacro/materials.xacro"/>
     <xacro:include filename="$(find robot_description)/pointfoot/xacro/leg.xacro"/>
@@ -106,7 +107,7 @@
         <gazebo>
             <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
                 <robot_sim_type>pointfoot_gazebo/PointFootHWSim</robot_sim_type>
-                <parameters>$(find pointfoot_gazebo)/config/default_pointfoot.yaml</parameters>
+                <parameters>$(find pointfoot_gazebo)/config/pointfoot_gazebo.yaml</parameters>
             </plugin>
         </gazebo> 
     </xacro:if>
