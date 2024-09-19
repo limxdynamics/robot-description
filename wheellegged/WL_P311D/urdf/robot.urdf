@@ -206,7 +206,7 @@
             <origin rpy="0 0 0" xyz="-0.0455 0 -0.07551" />
             <geometry>
                 <mesh
-                    filename="package://robot_description/wheellegged/meshes/base_link.STL"
+                    filename="package://robot_description/wheellegged/WL_P311D/meshes/base_link.STL"
                     scale="1 1 1" />
             </geometry>
             <material name="orange">
@@ -268,18 +268,12 @@
             <origin rpy="0 0 0" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://robot_description/wheellegged/meshes/LF_hip.STL"
+                    filename="package://robot_description/wheellegged/WL_P311D/meshes/LF_hip.STL"
                     scale="1 1 1" />
             </geometry>
             <material name="orange" />
             <color rgba="0.8902 0.8902 0.91373 1" />
         </visual>
-        <!-- <collision>
-                <origin rpy="${pi/2.0} 0 0" xyz="0 0 0"/>
-                <geometry>
-                    <cylinder length="${hip_length}" radius="${hip_radius}"/>
-                </geometry>
-            </collision> -->
         <inertial>
             <origin rpy="0 0 0" xyz="0.053246 0.009578 -0.000256" />
             <mass value="1.434" />
@@ -300,24 +294,12 @@
             <origin rpy="0 0 0" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://robot_description/wheellegged/meshes/LF_thigh.STL"
+                    filename="package://robot_description/wheellegged/WL_P311D/meshes/LF_thigh.STL"
                     scale="1 1 1" />
             </geometry>
             <material name="orange" />
             <color rgba="0.8902 0.8902 0.91373 1" />
         </visual>
-        <!-- <collision>
-                <origin rpy="0 ${pi/2.0+0.1} 0" xyz="${thigh_x_offset} 0 ${-thigh_length/2.0}"/>
-                <geometry>
-                    <box size="${thigh_length} ${thigh_width} ${thigh_height}"/>
-                </geometry>
-            </collision>
-            <collision>
-                <origin rpy="${pi/2.0} 0 0" xyz="0 ${left_right*thigh_shoulder_y_offset} 0"/>
-                <geometry>
-                    <cylinder length="${thigh_shoulder_length}" radius="${thigh_shoulder_radius}"/>
-                </geometry>
-            </collision> -->
         <inertial>
             <origin rpy="0 0 0" xyz="-0.057303 0.055844 0.004528" />
             <mass value="2.751" />
@@ -338,7 +320,7 @@
             <origin rpy="0 0 0" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://robot_description/wheellegged/meshes/LF_calf.STL"
+                    filename="package://robot_description/wheellegged/WL_P311D/meshes/LF_calf.STL"
                     scale="1 1 1" />
             </geometry>
             <material name="orange" />
@@ -365,15 +347,12 @@
         <limit effort="40" lower="-1000" upper="1000" velocity="20" />
         <dynamics friction="1" />
     </joint>
-    <!-- <gazebo reference="${prefix}_WHL">
-            <disableFixedJointLumping>true</disableFixedJointLumping>
-        </gazebo> -->
     <link name="LF_wheel">
         <visual>
             <origin rpy="0 0 0" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://robot_description/wheellegged/meshes/LF_wheel.STL"
+                    filename="package://robot_description/wheellegged/WL_P311D/meshes/LF_wheel.STL"
                     scale="1 1 1" />
             </geometry>
             <material name="orange" />
@@ -461,18 +440,12 @@
             <origin rpy="0 0 0" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://robot_description/wheellegged/meshes/RF_hip.STL"
+                    filename="package://robot_description/wheellegged/WL_P311D/meshes/RF_hip.STL"
                     scale="1 1 1" />
             </geometry>
             <material name="orange" />
             <color rgba="0.8902 0.8902 0.91373 1" />
         </visual>
-        <!-- <collision>
-                <origin rpy="${pi/2.0} 0 0" xyz="0 0 0"/>
-                <geometry>
-                    <cylinder length="${hip_length}" radius="${hip_radius}"/>
-                </geometry>
-            </collision> -->
         <inertial>
             <origin rpy="0 0 0" xyz="0.053246 -0.009578 -0.000256" />
             <mass value="1.434" />
@@ -493,24 +466,12 @@
             <origin rpy="0 0 0" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://robot_description/wheellegged/meshes/RF_thigh.STL"
+                    filename="package://robot_description/wheellegged/WL_P311D/meshes/RF_thigh.STL"
                     scale="1 1 1" />
             </geometry>
             <material name="orange" />
             <color rgba="0.8902 0.8902 0.91373 1" />
         </visual>
-        <!-- <collision>
-                <origin rpy="0 ${pi/2.0+0.1} 0" xyz="${thigh_x_offset} 0 ${-thigh_length/2.0}"/>
-                <geometry>
-                    <box size="${thigh_length} ${thigh_width} ${thigh_height}"/>
-                </geometry>
-            </collision>
-            <collision>
-                <origin rpy="${pi/2.0} 0 0" xyz="0 ${left_right*thigh_shoulder_y_offset} 0"/>
-                <geometry>
-                    <cylinder length="${thigh_shoulder_length}" radius="${thigh_shoulder_radius}"/>
-                </geometry>
-            </collision> -->
         <inertial>
             <origin rpy="0 0 0" xyz="-0.057303 -0.055844 0.004528" />
             <mass value="2.751" />
@@ -531,7 +492,7 @@
             <origin rpy="0 0 0" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://robot_description/wheellegged/meshes/RF_calf.STL"
+                    filename="package://robot_description/wheellegged/WL_P311D/meshes/RF_calf.STL"
                     scale="1 1 1" />
             </geometry>
             <material name="orange" />
@@ -558,15 +519,12 @@
         <limit effort="40" lower="-1000" upper="1000" velocity="20" />
         <dynamics friction="1" />
     </joint>
-    <!-- <gazebo reference="${prefix}_WHL">
-            <disableFixedJointLumping>true</disableFixedJointLumping>
-        </gazebo> -->
     <link name="RF_wheel">
         <visual>
             <origin rpy="0 0 0" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://robot_description/wheellegged/meshes/RF_wheel.STL"
+                    filename="package://robot_description/wheellegged/WL_P311D/meshes/RF_wheel.STL"
                     scale="1 1 1" />
             </geometry>
             <material name="orange" />
@@ -654,18 +612,12 @@
             <origin rpy="0 0 0" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://robot_description/wheellegged/meshes/LH_hip.STL"
+                    filename="package://robot_description/wheellegged/WL_P311D/meshes/LH_hip.STL"
                     scale="1 1 1" />
             </geometry>
             <material name="orange" />
             <color rgba="0.8902 0.8902 0.91373 1" />
         </visual>
-        <!-- <collision>
-                <origin rpy="${pi/2.0} 0 0" xyz="0 0 0"/>
-                <geometry>
-                    <cylinder length="${hip_length}" radius="${hip_radius}"/>
-                </geometry>
-            </collision> -->
         <inertial>
             <origin rpy="0 0 0" xyz="-0.053246 0.009578 -0.000256" />
             <mass value="1.434" />
@@ -686,24 +638,12 @@
             <origin rpy="0 0 0" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://robot_description/wheellegged/meshes/LH_thigh.STL"
+                    filename="package://robot_description/wheellegged/WL_P311D/meshes/LH_thigh.STL"
                     scale="1 1 1" />
             </geometry>
             <material name="orange" />
             <color rgba="0.8902 0.8902 0.91373 1" />
         </visual>
-        <!-- <collision>
-                <origin rpy="0 ${pi/2.0+0.1} 0" xyz="${thigh_x_offset} 0 ${-thigh_length/2.0}"/>
-                <geometry>
-                    <box size="${thigh_length} ${thigh_width} ${thigh_height}"/>
-                </geometry>
-            </collision>
-            <collision>
-                <origin rpy="${pi/2.0} 0 0" xyz="0 ${left_right*thigh_shoulder_y_offset} 0"/>
-                <geometry>
-                    <cylinder length="${thigh_shoulder_length}" radius="${thigh_shoulder_radius}"/>
-                </geometry>
-            </collision> -->
         <inertial>
             <origin rpy="0 0 0" xyz="-0.057303 0.055844 0.004528" />
             <mass value="2.751" />
@@ -724,7 +664,7 @@
             <origin rpy="0 0 0" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://robot_description/wheellegged/meshes/LH_calf.STL"
+                    filename="package://robot_description/wheellegged/WL_P311D/meshes/LH_calf.STL"
                     scale="1 1 1" />
             </geometry>
             <material name="orange" />
@@ -751,15 +691,12 @@
         <limit effort="40" lower="-1000" upper="1000" velocity="20" />
         <dynamics friction="1" />
     </joint>
-    <!-- <gazebo reference="${prefix}_WHL">
-            <disableFixedJointLumping>true</disableFixedJointLumping>
-        </gazebo> -->
     <link name="LH_wheel">
         <visual>
             <origin rpy="0 0 0" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://robot_description/wheellegged/meshes/LH_wheel.STL"
+                    filename="package://robot_description/wheellegged/WL_P311D/meshes/LH_wheel.STL"
                     scale="1 1 1" />
             </geometry>
             <material name="orange" />
@@ -847,18 +784,12 @@
             <origin rpy="0 0 0" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://robot_description/wheellegged/meshes/RH_hip.STL"
+                    filename="package://robot_description/wheellegged/WL_P311D/meshes/RH_hip.STL"
                     scale="1 1 1" />
             </geometry>
             <material name="orange" />
             <color rgba="0.8902 0.8902 0.91373 1" />
         </visual>
-        <!-- <collision>
-                <origin rpy="${pi/2.0} 0 0" xyz="0 0 0"/>
-                <geometry>
-                    <cylinder length="${hip_length}" radius="${hip_radius}"/>
-                </geometry>
-            </collision> -->
         <inertial>
             <origin rpy="0 0 0" xyz="-0.053246 -0.009578 -0.000256" />
             <mass value="1.434" />
@@ -879,24 +810,12 @@
             <origin rpy="0 0 0" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://robot_description/wheellegged/meshes/RH_thigh.STL"
+                    filename="package://robot_description/wheellegged/WL_P311D/meshes/RH_thigh.STL"
                     scale="1 1 1" />
             </geometry>
             <material name="orange" />
             <color rgba="0.8902 0.8902 0.91373 1" />
         </visual>
-        <!-- <collision>
-                <origin rpy="0 ${pi/2.0+0.1} 0" xyz="${thigh_x_offset} 0 ${-thigh_length/2.0}"/>
-                <geometry>
-                    <box size="${thigh_length} ${thigh_width} ${thigh_height}"/>
-                </geometry>
-            </collision>
-            <collision>
-                <origin rpy="${pi/2.0} 0 0" xyz="0 ${left_right*thigh_shoulder_y_offset} 0"/>
-                <geometry>
-                    <cylinder length="${thigh_shoulder_length}" radius="${thigh_shoulder_radius}"/>
-                </geometry>
-            </collision> -->
         <inertial>
             <origin rpy="0 0 0" xyz="-0.057303 -0.055844 0.004528" />
             <mass value="2.751" />
@@ -917,7 +836,7 @@
             <origin rpy="0 0 0" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://robot_description/wheellegged/meshes/RH_calf.STL"
+                    filename="package://robot_description/wheellegged/WL_P311D/meshes/RH_calf.STL"
                     scale="1 1 1" />
             </geometry>
             <material name="orange" />
@@ -944,15 +863,12 @@
         <limit effort="40" lower="-1000" upper="1000" velocity="20" />
         <dynamics friction="1" />
     </joint>
-    <!-- <gazebo reference="${prefix}_WHL">
-            <disableFixedJointLumping>true</disableFixedJointLumping>
-        </gazebo> -->
     <link name="RH_wheel">
         <visual>
             <origin rpy="0 0 0" xyz="0 0 0" />
             <geometry>
                 <mesh
-                    filename="package://robot_description/wheellegged/meshes/RH_wheel.STL"
+                    filename="package://robot_description/wheellegged/WL_P311D/meshes/RH_wheel.STL"
                     scale="1 1 1" />
             </geometry>
             <material name="orange" />
