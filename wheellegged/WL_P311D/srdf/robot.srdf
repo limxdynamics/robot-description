@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This does not replace URDF, and is not an extension of URDF.
+    This is a format for representing semantic information about the robot structure.
+    A URDF file must exist for this robot as well, where the joints and the links that are referenced are defined
+-->
+<robot name="wheel_legged">
+    <rotor_params>
+        <joint name="LF_HAA" mass="0" gear_ratio="1" />
+        <joint name="LF_HFE" mass="0" gear_ratio="1" />
+        <joint name="LF_KFE" mass="0" gear_ratio="1" />
+        <joint name="LF_WHL" mass="0" gear_ratio="1" />
+
+        <joint name="RF_HAA" mass="0.0" gear_ratio="1" />
+        <joint name="RF_HFE" mass="0.0" gear_ratio="1" />
+        <joint name="RF_KFE" mass="0.0" gear_ratio="1" />
+        <joint name="RF_WHL" mass="0.0" gear_ratio="1" />
+
+        <joint name="LH_HAA" mass="0.0" gear_ratio="1" />
+        <joint name="LH_HFE" mass="0.0" gear_ratio="1" />
+        <joint name="LH_KFE" mass="0.0" gear_ratio="1" />
+        <joint name="LH_WHL" mass="0.0" gear_ratio="1" />
+
+        <joint name="RH_HAA" mass="0.0" gear_ratio="1" />
+        <joint name="RH_HFE" mass="0.0" gear_ratio="1" />
+        <joint name="RH_KFE" mass="0.0" gear_ratio="1" />
+        <joint name="RH_WHL" mass="0.0" gear_ratio="1" />
+    </rotor_params>
+</robot>
