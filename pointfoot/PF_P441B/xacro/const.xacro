@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 
-<robot name="p1_description" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<robot name="pointfoot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
     <!-- Constants for robot dimensions -->
     <xacro:property name="PI" value="3.1415926535897931"/>
     <xacro:property name="stick_mass" value="0.00001"/>
 
     <!-- simplified collision value -->
-    <xacro:property name="base_width" value="0.26"/> 
-    <xacro:property name="base_length" value="0.37"/>
+    <xacro:property name="base_width" value="0.24"/> 
+    <xacro:property name="base_length" value="0.28"/>
     <xacro:property name="base_height" value="0.14"/>
     <xacro:property name="abad_radius" value="0.05"/>
     <xacro:property name="abad_length" value="0.05"/>
-    <xacro:property name="hip_radius" value="0.035"/>
+    <xacro:property name="hip_radius" value="0.025"/>
     <xacro:property name="hip_length" value="0.15"/>
     <xacro:property name="calf_radius" value="0.03"/>
     <xacro:property name="calf_length" value="0.26"/>
@@ -20,9 +20,9 @@
 
     <!-- kinematic value -->
     <!-- abad offset from base frame value -->
-    <xacro:property name="abad_offset_x" value="0.00420"/>
+    <xacro:property name="abad_offset_x" value="0.0162"/>
     <xacro:property name="abad_offset_y" value="0.10500"/>
-    <xacro:property name="abad_offset_z" value="-0.09876"/>
+    <xacro:property name="abad_offset_z" value="-0.09076"/>
     <!-- hip offset from abad frame value -->
     <xacro:property name="hip_offset_x" value="-0.077"/>
     <xacro:property name="hip_offset_y" value="0.02050"/>
@@ -34,7 +34,7 @@
     <!-- foot offset from abad frame value -->
     <xacro:property name="foot_offset_x" value="0.14929"/>
     <xacro:property name="foot_offset_y" value="0.0"/>
-    <xacro:property name="foot_offset_z" value="-0.26014"/>
+    <xacro:property name="foot_offset_z" value="-0.2598"/>
     <!-- contact offset from abad frame value -->
     <xacro:property name="contact_offset_x" value="0.0"/>
     <xacro:property name="contact_offset_y" value="0.0"/>
@@ -60,75 +60,75 @@
 
     <!-- dynamics inertial value        total 18.508kg -->
     <!-- base_Link -->
-    <xacro:property name="base_mass" value="8.996"/>
-    <xacro:property name="base_com_x" value="-0.009836"/>
-    <xacro:property name="base_com_y" value="0.002360"/>
-    <xacro:property name="base_com_z" value="-0.015289"/>
-    <xacro:property name="base_ixx" value="0.115576"/>
-    <xacro:property name="base_ixy" value="0.001120"/>
-    <xacro:property name="base_ixz" value="0.029854"/>
-    <xacro:property name="base_iyy" value="0.103653"/>
-    <xacro:property name="base_iyz" value="-0.001176"/>
-    <xacro:property name="base_izz" value="0.106090"/>
+    <xacro:property name="base_mass" value="8.49"/>
+    <xacro:property name="base_com_x" value="0.0124"/>
+    <xacro:property name="base_com_y" value="0.00086"/>
+    <xacro:property name="base_com_z" value="-0.00641"/>
+    <xacro:property name="base_ixx" value="114695.78E-06"/>
+    <xacro:property name="base_ixy" value="300.36E-06"/>
+    <xacro:property name="base_ixz" value="24869.11E-06"/>
+    <xacro:property name="base_iyy" value="93374.40E-06"/>
+    <xacro:property name="base_iyz" value="-412.55E-06"/>
+    <xacro:property name="base_izz" value="85090.38E-06"/>
 
     <!-- abad_Link (left) -->
-    <xacro:property name="abad_mass" value="1.622"/>
-    <xacro:property name="abad_com_x" value="-0.067850"/>
-    <xacro:property name="abad_com_y" value="0.045853"/>
-    <xacro:property name="abad_com_z" value="0.001067"/>
-    <xacro:property name="abad_ixx" value="0.001827"/>
-    <xacro:property name="abad_ixy" value="0.000453"/>
-    <xacro:property name="abad_ixz" value="-0.000010"/>
-    <xacro:property name="abad_iyy" value="0.002730"/>
-    <xacro:property name="abad_iyz" value="-0.000021"/>
-    <xacro:property name="abad_izz" value="0.002448"/>
+    <xacro:property name="abad_mass" value="1.59"/>
+    <xacro:property name="abad_com_x" value="-68.1E-03"/>
+    <xacro:property name="abad_com_y" value="45.66E-03"/>
+    <xacro:property name="abad_com_z" value="0.85E-03"/>
+    <xacro:property name="abad_ixx" value="1679.15E-06"/>
+    <xacro:property name="abad_ixy" value="404.64E-06"/>
+    <xacro:property name="abad_ixz" value="-8.97E-06"/>
+    <xacro:property name="abad_iyy" value="2576.87E-06"/>
+    <xacro:property name="abad_iyz" value="-18.99E-06"/>
+    <xacro:property name="abad_izz" value="2303.38E-06"/>
 
     <!-- hip_Link (left) -->
-    <xacro:property name="hip_mass" value="2.401"/>
-    <xacro:property name="hip_com_x" value="-0.029468"/>
-    <xacro:property name="hip_com_y" value="-0.045739"/>
-    <xacro:property name="hip_com_z" value="-0.041923"/>
-    <xacro:property name="hip_ixx" value="0.018353"/>
-    <xacro:property name="hip_ixy" value="0.001826"/>
-    <xacro:property name="hip_ixz" value="-0.009904"/>
-    <xacro:property name="hip_iyy" value="0.024534"/>
-    <xacro:property name="hip_iyz" value="0.002546"/>
-    <xacro:property name="hip_izz" value="0.009898"/>
+    <xacro:property name="hip_mass" value="2.39"/>
+    <xacro:property name="hip_com_x" value="-29.52E-03"/>
+    <xacro:property name="hip_com_y" value="-48.11E-03"/>
+    <xacro:property name="hip_com_z" value="-42.87E-03"/>
+    <xacro:property name="hip_ixx" value="19453.83E-06"/>
+    <xacro:property name="hip_ixy" value="1843.83E-06"/>
+    <xacro:property name="hip_ixz" value="-10493.91E-06"/>
+    <xacro:property name="hip_iyy" value="25939.08E-06"/>
+    <xacro:property name="hip_iyz" value="2565.29E-06"/>
+    <xacro:property name="hip_izz" value="10237.66E-06"/>
 
     <!-- knee_Link (left) -->
-    <xacro:property name="knee_mass" value="0.558"/>
-    <xacro:property name="knee_com_x" value="0.043236"/>
-    <xacro:property name="knee_com_y" value="-0.000044"/>
-    <xacro:property name="knee_com_z" value="-0.069329"/>
-    <xacro:property name="knee_ixx" value="0.003349"/>
-    <xacro:property name="knee_ixy" value="-0.000002"/>
-    <xacro:property name="knee_ixz" value="0.002081"/>
-    <xacro:property name="knee_iyy" value="0.004733"/>
-    <xacro:property name="knee_iyz" value="0.000002"/>
-    <xacro:property name="knee_izz" value="0.001480"/>
+    <xacro:property name="knee_mass" value="0.38"/>
+    <xacro:property name="knee_com_x" value="57E-03"/>
+    <xacro:property name="knee_com_y" value="1.45E-03"/>
+    <xacro:property name="knee_com_z" value="-90.82E-03"/>
+    <xacro:property name="knee_ixx" value="2455.61E-06"/>
+    <xacro:property name="knee_ixy" value="-5.55E-06"/>
+    <xacro:property name="knee_ixz" value="1521.44E-06"/>
+    <xacro:property name="knee_iyy" value="3468.19E-06"/>
+    <xacro:property name="knee_iyz" value="7.21E-06"/>
+    <xacro:property name="knee_izz" value="1062.24E-06"/>
 
     <!-- foot_Link (left) -->
-    <xacro:property name="foot_mass" value="0.176"/>
-    <xacro:property name="foot_com_x" value="-0.000739"/>
-    <xacro:property name="foot_com_y" value="0.000007"/>
-    <xacro:property name="foot_com_z" value="0.005104"/>
-    <xacro:property name="foot_ixx" value="0.000095"/>
-    <xacro:property name="foot_ixy" value="0.0"/>
-    <xacro:property name="foot_ixz" value="0.000004"/>
-    <xacro:property name="foot_iyy" value="0.000096"/>
-    <xacro:property name="foot_iyz" value="0.0"/>
-    <xacro:property name="foot_izz" value="0.000071"/>
+    <xacro:property name="foot_mass" value="0.16"/>
+    <xacro:property name="foot_com_x" value="-0.4E-03"/>
+    <xacro:property name="foot_com_y" value="0.0"/>
+    <xacro:property name="foot_com_z" value="3.62E-03"/>
+    <xacro:property name="foot_ixx" value="79.95E-06"/>
+    <xacro:property name="foot_ixy" value="-0.01E-06"/>
+    <xacro:property name="foot_ixz" value="1.99E-06"/>
+    <xacro:property name="foot_iyy" value="81.55E-06"/>
+    <xacro:property name="foot_iyz" value="-0.07E-06"/>
+    <xacro:property name="foot_izz" value="65.95E-06"/>
 
     <!-- contact_Link (left) -->
     <xacro:property name="contact_mass" value="1e-6"/>
     <xacro:property name="contact_com_x" value="-6.4629E-05"/>
     <xacro:property name="contact_com_y" value="5.464E-05"/>
-    <xacro:property name="contact_com_z" value="0.005104"/>
-    <xacro:property name="contact_ixx" value="0.000095"/>
+    <xacro:property name="contact_com_z" value="0.0011936"/>
+    <xacro:property name="contact_ixx" value="1e-12"/>
     <xacro:property name="contact_ixy" value="0.0"/>
     <xacro:property name="contact_ixz" value="0.000004"/>
-    <xacro:property name="contact_iyy" value="0.000096"/>
+    <xacro:property name="contact_iyy" value="1e-12"/>
     <xacro:property name="contact_iyz" value="0.0"/>
-    <xacro:property name="contact_izz" value="0.000071"/>
+    <xacro:property name="contact_izz" value="1e-12"/>
 
 </robot>
