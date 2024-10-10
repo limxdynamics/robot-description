@@ -11,6 +11,9 @@ project(robot_description)
 if($ENV{ROS_VERSION} EQUAL 1)
   # In ROS1 compilation environment
   message("Currently in ROS1 compilation environment")
+
+  find_package(catkin REQUIRED COMPONENTS roscpp)
+  
   catkin_package(CATKIN_DEPENDS)
 
   # Install directories 'meshes' and 'urdf' to the package share directory
