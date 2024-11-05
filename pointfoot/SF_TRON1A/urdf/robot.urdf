@@ -75,7 +75,7 @@
                     rpy="0 0 0"/>
             <geometry>
                 <mesh
-                        filename="package://robot_description/pointfoot/PF_P441C2/meshes/base_Link.STL"/>
+                        filename="package://robot_description/pointfoot/SF_TRON1A/meshes/base_Link.STL"/>
             </geometry>
             <material
                     name="">
@@ -132,7 +132,7 @@
                     rpy="0 0 0"/>
             <geometry>
                 <mesh
-                        filename="package://robot_description/pointfoot/PF_P441C2/meshes/abad_L_Link.STL"/>
+                        filename="package://robot_description/pointfoot/SF_TRON1A/meshes/abad_L_Link.STL"/>
             </geometry>
             <material
                     name="">
@@ -175,7 +175,7 @@
                     rpy="0 0 0"/>
             <geometry>
                 <mesh
-                        filename="package://robot_description/pointfoot/PF_P441C2/meshes/hip_L_Link.STL"/>
+                        filename="package://robot_description/pointfoot/SF_TRON1A/meshes/hip_L_Link.STL"/>
             </geometry>
             <material
                     name="">
@@ -218,7 +218,7 @@
                     rpy="0 0 0"/>
             <geometry>
                 <mesh
-                        filename="package://robot_description/pointfoot/PF_P441C2/meshes/knee_L_Link.STL"/>
+                        filename="package://robot_description/pointfoot/SF_TRON1A/meshes/knee_L_Link.STL"/>
             </geometry>
             <material
                     name="">
@@ -261,7 +261,7 @@
                     rpy="0 0 0"/>
             <geometry>
                 <mesh
-                        filename="package://robot_description/pointfoot/PF_P441C2/meshes/foot_L_Link.STL"/>
+                        filename="package://robot_description/pointfoot/SF_TRON1A/meshes/foot_L_Link.STL"/>
             </geometry>
             <material
                     name="">
@@ -374,7 +374,7 @@
                     rpy="0 0 0"/>
             <geometry>
                 <mesh
-                        filename="package://robot_description/pointfoot/PF_P441C2/meshes/abad_R_Link.STL"/>
+                        filename="package://robot_description/pointfoot/SF_TRON1A/meshes/abad_R_Link.STL"/>
             </geometry>
             <material
                     name="">
@@ -417,7 +417,7 @@
                     rpy="0 0 0"/>
             <geometry>
                 <mesh
-                        filename="package://robot_description/pointfoot/PF_P441C2/meshes/hip_R_Link.STL"/>
+                        filename="package://robot_description/pointfoot/SF_TRON1A/meshes/hip_R_Link.STL"/>
             </geometry>
             <material
                     name="">
@@ -460,7 +460,7 @@
                     rpy="0 0 0"/>
             <geometry>
                 <mesh
-                        filename="package://robot_description/pointfoot/PF_P441C2/meshes/knee_R_Link.STL"/>
+                        filename="package://robot_description/pointfoot/SF_TRON1A/meshes/knee_R_Link.STL"/>
             </geometry>
             <material
                     name="">
@@ -503,7 +503,7 @@
                     rpy="0 0 0"/>
             <geometry>
                 <mesh
-                        filename="package://robot_description/pointfoot/PF_P441C2/meshes/foot_R_Link.STL"/>
+                        filename="package://robot_description/pointfoot/SF_TRON1A/meshes/foot_R_Link.STL"/>
             </geometry>
             <material
                     name="">
