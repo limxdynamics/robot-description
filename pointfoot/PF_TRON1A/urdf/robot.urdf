@@ -66,8 +66,8 @@
         <inertial>
             <origin rpy="0 0 0" xyz="0.04576 0.00014 -0.16398"/>
             <mass value="9.585"/>
-            <inertia ixx="1555.384E-06" ixy="397.78E-06" ixz="-13.10E-06"
-                     iyy="2359.25E-06" iyz="-0.98E-06" izz="2080.92E-06"/>
+            <inertia ixx="140110.479E-06" ixy="534.939E-06" ixz="28184.116E-06"
+                     iyy="110641.449E-06" iyz="-27.278E-06" izz="98944.542E-06"/>
         </inertial>
         <visual>
             <origin
@@ -84,7 +84,7 @@
             </material>
         </visual>
         <collision>
-            <origin xyz="0.03 0 -0.072" rpy="0 0 0"/>
+            <origin xyz="0.033 0 -0.07" rpy="0 0 0"/>
             <geometry>
                 <box size="0.265 0.26 0.18"/>
             </geometry>
@@ -227,7 +227,7 @@
             </material>
         </visual>
         <collision>
-            <origin xyz="0.078 0 -0.12" rpy="0 -0.55 0"/>
+            <origin xyz="0.073 0 -0.12" rpy="0 -0.55 0"/>
             <geometry>
                 <cylinder length="0.26" radius="0.015"/>
             </geometry>

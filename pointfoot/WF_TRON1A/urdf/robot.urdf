@@ -131,7 +131,7 @@
             name="abad_L_Link">
         <inertial>
             <origin rpy="0 0 0" xyz="-69.77E-03 44.79E-03 0.57E-03"/>
-            <mass value="1.496"/>
+            <mass value="1.469"/>
             <inertia ixx="1555.384E-06" ixy="397.78E-06" ixz="-13.10E-06"
                      iyy="2359.25E-06" iyz="-0.98E-06" izz="2080.92E-06"/>
         </inertial>
@@ -356,7 +356,7 @@
             name="abad_R_Link">
         <inertial>
             <origin rpy="0 0 0" xyz="-69.77E-03 -44.79E-03 0.57E-03"/>
-            <mass value="1.496"/>
+            <mass value="1.469"/>
             <inertia ixx="1555.384E-06" ixy="-397.78E-06" ixz="-13.10E-06"
                      iyy="2359.25E-06" iyz="0.98E-06" izz="2080.92E-06"/>
         </inertial>

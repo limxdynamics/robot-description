@@ -26,7 +26,7 @@
             <visual>
                 <origin rpy="0 0 0" xyz="0 0 0"/>
                 <geometry>
-                    <mesh filename="$(find robot_description)/pointfoot/WF_TRON1A/meshes/abad_${name}_Link.STL" scale="1 1 1"/>
+                    <mesh filename="$(find robot_description)/pointwheel/WF_TRON1A/meshes/abad_${name}_Link.STL" scale="1 1 1"/>
                 </geometry>
                 <material name="black"/>
             </visual>
@@ -61,7 +61,7 @@
             <visual>
                 <origin rpy="0 0 0" xyz="0 0 0"/>
                 <geometry>
-                    <mesh filename="$(find robot_description)/pointfoot/WF_TRON1A/meshes/hip_${name}_Link.STL" scale="1 1 1"/>
+                    <mesh filename="$(find robot_description)/pointwheel/WF_TRON1A/meshes/hip_${name}_Link.STL" scale="1 1 1"/>
                 </geometry>
                 <material name="black"/>
             </visual>
@@ -96,7 +96,7 @@
             <visual>
                 <origin rpy="0 0 0" xyz="0 0 0"/>
                 <geometry>
-                    <mesh filename="$(find robot_description)/pointfoot/WF_TRON1A/meshes/knee_${name}_Link.STL" scale="1 1 1"/>
+                    <mesh filename="$(find robot_description)/pointwheel/WF_TRON1A/meshes/knee_${name}_Link.STL" scale="1 1 1"/>
                 </geometry>
                 <material name="black"/>
             </visual>
@@ -117,64 +117,37 @@
         </link>
 
 
-        <joint name="foot_${name}_joint" type="fixed">
+        <joint name="wheel_${name}_joint" type="fixed">
             <origin
-                xyz="${foot_offset_x} ${foot_offset_y*mirror} ${foot_offset_z}"
+                xyz="${wheel_offset_x} ${wheel_offset_y*mirror} ${wheel_offset_z}"
                 rpy="0 0 0"/>
             <parent link="knee_${name}_Link"/>
-            <child link="foot_${name}_Link"/>
-            <axis xyz="0 ${mirror} 0"/>
+            <child link="wheel_${name}_Link"/>
+            <axis xyz="0 1 0"/>
             <dynamics damping="${damping}" friction="${friction}"/>
         </joint>
 
-        <link name="foot_${name}_Link">
+        <link name="wheel_${name}_Link">
             <visual>
                 <origin rpy="0 0 0" xyz="0 0 0"/>
                 <geometry>
-                    <mesh filename="$(find robot_description)/pointfoot/WF_TRON1A/meshes/foot_${name}_Link.STL" scale="1 1 1"/>
+                    <mesh filename="$(find robot_description)/pointwheel/WF_TRON1A/meshes/wheel_${name}_Link.STL" scale="1 1 1"/>
                 </geometry>
                 <material name="grey"/>
             </visual>
             <collision>
                 <origin rpy="0 0 0" xyz="0 0 0.0"/>
                 <geometry>
-                    <sphere radius="${foot_radius}"/>
+                    <sphere radius="${wheel_radius}"/>
                 </geometry>
             </collision>
             <inertial>
-                <origin rpy="0 0 0" xyz="${foot_com_x} ${foot_com_y*mirror} ${foot_com_z}"/>
-                <mass value="${foot_mass}"/>
+                <origin rpy="0 0 0" xyz="${wheel_com_x} ${wheel_com_y*mirror} ${wheel_com_z}"/>
+                <mass value="${wheel_mass}"/>
                 <inertia
-                    ixx="${foot_ixx}" ixy="${foot_ixy*mirror}" ixz="${foot_ixz}"
-                    iyy="${foot_iyy}" iyz="${foot_iyz*mirror}"
-                    izz="${foot_izz}"/>       
-            </inertial>
-        </link>
-
-
-        <joint name="contact_${name}_joint" type="fixed">
-            <xacro:insert_block name="origin"/>
-            <parent link="foot_${name}_Link"/>
-            <child link="contact_${name}_Link"/>
-            <axis xyz="1 0 0"/>
-            <dynamics damping="${damping}" friction="${friction}"/>        
-        </joint>
-
-        <link name="contact_${name}_Link">
-            <visual>
-                <origin rpy="0 0 0" xyz="0 0 0"/>
-                <geometry>
-                    <mesh filename="$(find robot_description)/pointfoot/WF_TRON1A/meshes/foot_${name}_Link.STL" scale="1 1 1"/>
-                </geometry>
-                <material name="grey"/>
-            </visual>
-            <inertial>
-                <origin rpy="0 0 0" xyz="${contact_com_x} ${contact_com_y*mirror} ${contact_com_z}"/>
-                <mass value="${contact_mass}"/>
-                <inertia
-                    ixx="${contact_ixx}" ixy="${contact_ixy*mirror}" ixz="${contact_ixz}"
-                    iyy="${contact_iyy}" iyz="${contact_iyz*mirror}"
-                    izz="${contact_izz}"/>       
+                    ixx="${wheel_ixx}" ixy="${wheel_ixy*mirror}" ixz="${wheel_ixz}"
+                    iyy="${wheel_iyy}" iyz="${wheel_iyz*mirror}"
+                    izz="${wheel_izz}"/>       
             </inertial>
         </link>
 

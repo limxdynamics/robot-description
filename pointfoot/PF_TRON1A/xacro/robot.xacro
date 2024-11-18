@@ -112,4 +112,26 @@
         </gazebo> 
     </xacro:if>
 
+    <!-- ****************************************** D435 Camera ******************************************************** -->
+    <!-- <joint name="d435_joint" type="fixed">
+        <origin rpy="0 1.063778179 0" xyz="0.13223 0.0222 -0.26826"/>
+        <parent link="base_Link"/>
+        <child link="d435_Link"/>
+    </joint>
+    <link name="d435_Link">
+        <visual>
+            <origin rpy="1.5707963267948966 0 1.5707963267948966" xyz="0.0149 -0.0175 0"/>
+            <geometry>
+                <mesh filename="package://robot_description/pointfoot/meshes_camera/d435.dae"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 -0.0175 0"/>
+            <geometry>
+                <box size="0.02505 0.09 0.025"/>
+            </geometry>
+        </collision>
+    </link> -->
+    <!-- ****************************************** D435 Camera END ******************************************************** -->
+
 </robot>
