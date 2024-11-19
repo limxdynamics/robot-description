@@ -26,7 +26,7 @@
             <visual>
                 <origin rpy="0 0 0" xyz="0 0 0"/>
                 <geometry>
-                    <mesh filename="$(find robot_description)/pointwheel/WF_TRON1A/meshes/abad_${name}_Link.STL" scale="1 1 1"/>
+                    <mesh filename="$(find robot_description)/pointfoot/WF_TRON1A/meshes/abad_${name}_Link.STL" scale="1 1 1"/>
                 </geometry>
                 <material name="black"/>
             </visual>
@@ -61,7 +61,7 @@
             <visual>
                 <origin rpy="0 0 0" xyz="0 0 0"/>
                 <geometry>
-                    <mesh filename="$(find robot_description)/pointwheel/WF_TRON1A/meshes/hip_${name}_Link.STL" scale="1 1 1"/>
+                    <mesh filename="$(find robot_description)/pointfoot/WF_TRON1A/meshes/hip_${name}_Link.STL" scale="1 1 1"/>
                 </geometry>
                 <material name="black"/>
             </visual>
@@ -96,7 +96,7 @@
             <visual>
                 <origin rpy="0 0 0" xyz="0 0 0"/>
                 <geometry>
-                    <mesh filename="$(find robot_description)/pointwheel/WF_TRON1A/meshes/knee_${name}_Link.STL" scale="1 1 1"/>
+                    <mesh filename="$(find robot_description)/pointfoot/WF_TRON1A/meshes/knee_${name}_Link.STL" scale="1 1 1"/>
                 </geometry>
                 <material name="black"/>
             </visual>
@@ -117,7 +117,7 @@
         </link>
 
 
-        <joint name="wheel_${name}_joint" type="fixed">
+        <joint name="wheel_${name}_joint" type="revolute">
             <origin
                 xyz="${wheel_offset_x} ${wheel_offset_y*mirror} ${wheel_offset_z}"
                 rpy="0 0 0"/>
@@ -125,20 +125,21 @@
             <child link="wheel_${name}_Link"/>
             <axis xyz="0 1 0"/>
             <dynamics damping="${damping}" friction="${friction}"/>
+            <limit effort="${wheel_torque_max}" velocity="${wheel_velocity_max}" lower="${wheel_min*PI/180.0}" upper="${wheel_max*PI/180.0}"/>
         </joint>
 
         <link name="wheel_${name}_Link">
             <visual>
                 <origin rpy="0 0 0" xyz="0 0 0"/>
                 <geometry>
-                    <mesh filename="$(find robot_description)/pointwheel/WF_TRON1A/meshes/wheel_${name}_Link.STL" scale="1 1 1"/>
+                    <mesh filename="$(find robot_description)/pointfoot/WF_TRON1A/meshes/wheel_${name}_Link.STL" scale="1 1 1"/>
                 </geometry>
                 <material name="grey"/>
             </visual>
             <collision>
-                <origin rpy="0 0 0" xyz="0 0 0.0"/>
+                <origin rpy="1.570796327 0 0" xyz="0 ${0.008*mirror} 0.0"/>
                 <geometry>
-                    <sphere radius="${wheel_radius}"/>
+                    <cylinder length="${wheel_length}" radius="${wheel_radius}"/>
                 </geometry>
             </collision>
             <inertial>

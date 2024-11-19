@@ -40,7 +40,7 @@
         <camera name="track" mode="trackcom" pos="0 -2.3 1.6" xyaxes="1 0 0 0 0.707 0.707"/>
         <light directional="true" diffuse=".8 .8 .8" pos="0 0 10" dir="0 0 -10"/>
 
-        <body name="base_Link" pos="0 0 0">
+        <body name="base_Link" pos="0 0 0.85">
             <inertial pos="0.0457123 0.000139854 -0.163809" quat="0.972578 -0.00615364 -0.232461 0.00398682" mass="9.595" diaginertia="0.154712 0.11093 0.0846371" />
             <joint type="free" limited="false" damping="0.0000" stiffness="0.0000" armature="0"/>
             <site name="imu" pos="0 0 0"/>
@@ -69,7 +69,7 @@
                             <inertial pos="3e-05 0.00807 -2e-05" quat="0.683013 0.183016 0.183017 0.683011" mass="1.08" diaginertia="0.00974272 0.00515568 0.00515344" />
                             <joint name="wheel_L_Joint" pos="0 0 0" axis="0 1 0" limited="true" range="-1000000 1000000" frictionloss="0.01" />
                             <geom class="visual" rgba="0.26667 0.26667 0.26667 1" mesh="wheel_L_Link" />
-                            <geom name="wheel_L_collision" size="0.127 0.025" quat="0.707107 0.707107 0 0" type="cylinder" rgba="1 0.423529 0.0392157 1" />
+                            <geom name="wheel_L_collision" pos="0.0 0.008 0.0" size="0.127 0.005" quat="0.707107 0.707107 0 0" type="cylinder" rgba="1 0.423529 0.0392157 1" />
                         </body>
                     </body>
                 </body>
@@ -96,7 +96,7 @@
                             <inertial pos="3e-05 -0.00807 -2e-05" quat="0.683011 0.183017 0.183016 0.683013" mass="1.08" diaginertia="0.00974272 0.00515568 0.00515344" />
                             <joint name="wheel_R_Joint" pos="0 0 0" axis="0 1 0" limited="true" range="-1000000 1000000" frictionloss="0.01" />
                             <geom class="visual" rgba="0.26667 0.26667 0.26667 1" mesh="wheel_R_Link" />
-                            <geom name="wheel_R_collision" size="0.127 0.025" quat="0.707107 0.707107 0 0" type="cylinder" rgba="1 0.423529 0.0392157 1" />
+                            <geom name="wheel_R_collision" pos="0.0 -0.008 0.0" size="0.127 0.005" quat="0.707107 0.707107 0 0" type="cylinder" rgba="1 0.423529 0.0392157 1" />
                         </body>
                     </body>
                 </body>

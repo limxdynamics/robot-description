@@ -31,7 +31,7 @@
             <material name="orange"/>
         </visual>
         <collision>
-            <origin rpy="0 0 0" xyz="0 0 ${base_height/2}"/>
+            <origin rpy="0 0 0" xyz="0.033 0 -0.07"/>
             <geometry>
                 <box size="${base_length} ${base_width} ${base_height}"/>
             </geometry>

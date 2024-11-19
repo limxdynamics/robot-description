@@ -31,7 +31,7 @@
             <material name="orange"/>
         </visual>
         <collision>
-            <origin rpy="0 0 0" xyz="0 0 ${base_height/2}"/>
+            <origin rpy="0 0 0" xyz="0.033 0 -0.07"/>
             <geometry>
                 <box size="${base_length} ${base_width} ${base_height}"/>
             </geometry>
@@ -122,7 +122,7 @@
         <visual>
             <origin rpy="1.5707963267948966 0 1.5707963267948966" xyz="0.0149 -0.0175 0"/>
             <geometry>
-                <mesh filename="package://robot_description/pointfoot/meshes_camera/d435.dae"/>
+                <mesh filename="$(find robot_description)/pointfoot/meshes_camera/d435.dae"/>
             </geometry>
         </visual>
         <collision>

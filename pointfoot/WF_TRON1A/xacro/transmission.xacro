@@ -37,6 +37,17 @@
             </actuator>
         </transmission>
 
+        <transmission name="wheel_${name}_joint_tran">
+            <type>transmission_interface/SimpleTransmission</type>
+            <joint name="wheel_${name}_joint">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            </joint>
+            <actuator name="wheel_${name}_joint_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+            </actuator>
+        </transmission>
+
     </xacro:macro>
 
 </robot>

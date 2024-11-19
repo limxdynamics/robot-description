@@ -16,7 +16,8 @@
     <xacro:property name="hip_length" value="0.15"/>
     <xacro:property name="calf_radius" value="0.03"/>
     <xacro:property name="calf_length" value="0.26"/>
-    <xacro:property name="wheel_radius" value="0.032"/>
+    <xacro:property name="wheel_radius" value="0.127"/>
+    <xacro:property name="wheel_length" value="0.005"/>
 
     <!-- kinematic value -->
     <!-- abad offset from base frame value -->
@@ -32,13 +33,9 @@
     <xacro:property name="knee_offset_y" value="-0.02050"/>
     <xacro:property name="knee_offset_z" value="-0.25981"/>
     <!-- wheel offset from abad frame value -->
-    <xacro:property name="wheel_offset_x" value="0.145"/>
-    <xacro:property name="wheel_offset_y" value="0.0"/>
-    <xacro:property name="wheel_offset_z" value="-0.2598"/>
-    <!-- contact offset from abad frame value -->
-    <xacro:property name="contact_offset_x" value="0.0"/>
-    <xacro:property name="contact_offset_y" value="0.0"/>
-    <xacro:property name="contact_offset_z" value="-0.032"/>
+    <xacro:property name="wheel_offset_x" value="0.1500"/>
+    <xacro:property name="wheel_offset_y" value="0.0435"/>
+    <xacro:property name="wheel_offset_z" value="-0.25981"/>
 
     <!-- joint limits -->
     <!-- <xacro:property name="damping" value="0"/> -->
@@ -57,6 +54,10 @@
     <xacro:property name="knee_min" value="-50"/>
     <xacro:property name="knee_velocity_max" value="15"/>
     <xacro:property name="knee_torque_max" value="80"/>
+    <xacro:property name="wheel_max" value="10000000000"/>
+    <xacro:property name="wheel_min" value="-10000000000"/>
+    <xacro:property name="wheel_velocity_max" value="40"/>
+    <xacro:property name="wheel_torque_max" value="40"/>
 
     <!-- dynamics inertial value        total 18.508kg -->
     <!-- base_Link -->

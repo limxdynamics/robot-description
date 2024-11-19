@@ -40,7 +40,7 @@
         <camera name="track" mode="trackcom" pos="0 -2.3 1.6" xyaxes="1 0 0 0 0.707 0.707"/>
         <light directional="true" diffuse=".8 .8 .8" pos="0 0 10" dir="0 0 -10"/>
 
-        <body name="base_Link" pos="0 0 0">
+        <body name="base_Link" pos="0 0 0.65">
             <inertial pos="0.0457123 0.000139854 -0.163809" quat="0.972578 -0.00615364 -0.232461 0.00398682" mass="9.595" diaginertia="0.154712 0.11093 0.0846371" />
             <joint type="free" limited="false" damping="0.0000" stiffness="0.0000" armature="0"/>
             <site name="imu" pos="0 0 0"/>
@@ -66,7 +66,7 @@
                         <geom name="knee_L_collision" type="cylinder" pos="0.078 0 -0.12" euler="0 -0.55 0" size="0.015 0.13" rgba ="0 0 1 0"/>
 
                         <geom class="visual" pos="0.150 0 -0.2598" rgba="0.26667 0.26667 0.26667 1" mesh="foot_L_Link" />
-                        <geom name="foot_L_collision" type="sphere" pos="0.0 0 0.0" size="0.032" rgba="0 0 1 0" />
+                        <geom name="foot_L_collision" type="sphere" pos="0.150 0 -0.2598" size="0.032" rgba="0 0 1 0" />
                     </body>
                 </body>
             </body>
@@ -88,9 +88,9 @@
                         <joint name="knee_R_Joint" pos="0 0 0" axis="0 1 0" limited="true" range="-1.36136 0.872665" />
                         <geom class="visual" rgba="0.79216 0.81961 0.93333 1" mesh="knee_R_Link" />
                         <geom name="knee_R_collision" type="cylinder" pos="0.078 0 -0.12" euler="0 -0.55 0" size="0.015 0.13" rgba ="0 0 1 0"/>
-
-                        <geom class="visual" pos="0.150 0 -0.2598" rgba="0.26667 0.26667 0.26667 1" mesh="foot_R_Link" />
-                        <geom name="foot_R_collision" type="sphere" pos="0.0 0 0.0" size="0.032" rgba="0 0 1 0" />
+                        
+                        <geom class="visual" pos="0.150 0 -0.2598" rgba="0.26667 0.26667 0.26667 1" mesh="foot_L_Link" />
+                        <geom name="foot_R_collision" type="sphere" pos="0.150 0 -0.2598" size="0.032" rgba="0 0 1 0" />
                     </body>
                 </body>
             </body>
