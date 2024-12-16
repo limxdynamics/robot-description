@@ -150,7 +150,7 @@
             </material>
         </visual>
         <collision>
-            <origin xyz="-0.08 0 0" rpy="1.57 0 0"/>
+            <origin xyz="0.03 0 0" rpy="1.57 0 1.57"/>
             <geometry>
                 <cylinder length="0.05" radius="0.05"/>
             </geometry>
@@ -168,7 +168,7 @@
                 link="abad_L_Link"/>
         <axis
                 xyz="1 0 0"/>
-        <limit effort="80.0" lower="-0.38397" upper="1.39626" velocity="20.0"/>
+        <limit effort="80.0" lower="-0.38397" upper="1.39626" velocity="15.0"/>
     </joint>
     <link
             name="hip_L_Link">
@@ -211,7 +211,7 @@
                 link="hip_L_Link"/>
         <axis
                 xyz="0 1 0"/>
-        <limit effort="80.0" lower="-1.012291" upper="1.396263" velocity="20.0"/>
+        <limit effort="80.0" lower="-1.012291" upper="1.396263" velocity="15.0"/>
     </joint>
     <link
             name="knee_L_Link">
@@ -254,7 +254,7 @@
                 link="knee_L_Link"/>
         <axis
                 xyz="0 -1 0"/>
-        <limit effort="80" lower="-0.872665" upper="1.361357" velocity="20"/>
+        <limit effort="80" lower="-0.872665" upper="1.361357" velocity="15"/>
     </joint>
 
     <joint name="wheel_L_Joint" type="revolute">
@@ -375,7 +375,7 @@
             </material>
         </visual>
         <collision>
-            <origin xyz="-0.08 0 0" rpy="1.57 0 0"/>
+            <origin xyz="0.03 0 0" rpy="1.57 0 1.57"/>
             <geometry>
                 <cylinder length="0.05" radius="0.05"/>
             </geometry>
@@ -393,7 +393,7 @@
                 link="abad_R_Link"/>
         <axis
                 xyz="1 0 0"/>
-        <limit effort="80.0" lower="-1.39626" upper="0.38397" velocity="20.0"/>
+        <limit effort="80.0" lower="-1.39626" upper="0.38397" velocity="15.0"/>
     </joint>
     <link
             name="hip_R_Link">
@@ -436,7 +436,7 @@
                 link="hip_R_Link"/>
         <axis
                 xyz="0 -1 0"/>
-        <limit effort="80.0" lower="-1.396263" upper="1.012291" velocity="20.0"/>
+        <limit effort="80.0" lower="-1.396263" upper="1.012291" velocity="15.0"/>
     </joint>
     <link
             name="knee_R_Link">
@@ -479,7 +479,7 @@
                 link="knee_R_Link"/>
         <axis
                 xyz="0 1 0"/>
-        <limit effort="80" lower="-1.361357" upper="0.872665" velocity="20"/>
+        <limit effort="80" lower="-1.361357" upper="0.872665" velocity="15"/>
     </joint>
     
     <joint name="wheel_R_Joint" type="revolute">

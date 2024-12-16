@@ -45,7 +45,7 @@
             <joint type="free" limited="false" damping="0.0000" stiffness="0.0000" armature="0"/>
             <site name="imu" pos="0 0 0"/>
             <geom class="visual" rgba="0.79216 0.81961 0.93333 1" mesh="base_Link" />
-            <geom name="base_collision" type="box" pos="0.033 0 -0.07" size="0.265 0.26 0.18" rgba="0 0 1 0"/>
+            <geom name="base_collision" size="0.135 0.13 0.095" pos="0.03 0 -0.072" type="box" rgba="0 0 1 0" />
 
             <body name="abad_L_Link" pos="0.05556 0.105 -0.2602">
                 <inertial pos="-0.06977 0.04479 0.00057" quat="0.595024 0.579772 0.394141 0.393019" mass="1.469" diaginertia="0.00252289 0.00208104 0.00139163" />
