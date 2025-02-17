@@ -40,7 +40,7 @@
         <camera name="track" mode="trackcom" pos="0 -2.3 1.6" xyaxes="1 0 0 0 0.707 0.707"/>
         <light directional="true" diffuse=".8 .8 .8" pos="0 0 10" dir="0 0 -10"/>
 
-        <body name="base_Link" pos="0 0 0.65">
+        <body name="base_Link" pos="0 0 0.82">
             <inertial pos="0.0457123 0.000139854 -0.163809" quat="0.972578 -0.00615364 -0.232461 0.00398682" mass="9.595" diaginertia="0.154712 0.11093 0.0846371" />
             <joint type="free" limited="false" damping="0.0000" stiffness="0.0000" armature="0"/>
             <site name="imu" pos="0 0 0"/>
