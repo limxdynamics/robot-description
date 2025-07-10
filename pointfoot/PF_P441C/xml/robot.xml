@@ -71,7 +71,7 @@
                 </body>
             </body>
 
-            <body name="abad_R_Link" pos="0.039 -0.1095 -0.08725">
+            <body name="abad_R_Link" pos="0.039 -0.1005 -0.08725">
                 <inertial pos="-0.067703 -0.044697 0.000863" quat="0.401805 0.407791 0.566903 0.592352" mass="1.56" diaginertia="0.00273065 0.00224784 0.00148073" />
                 <joint name="abad_R_Joint" pos="0 0 0" axis="1 0 0" limited="true" range="-1.39626 0.38397" />
                 <geom class="visual" rgba="0.79216 0.81961 0.93333 1" mesh="abad_R_Link" />

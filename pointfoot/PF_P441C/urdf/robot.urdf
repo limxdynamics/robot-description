@@ -393,7 +393,7 @@
             name="abad_R_Joint"
             type="revolute">
         <origin
-                xyz="0.039 -0.1095 -0.08725"
+                xyz="0.039 -0.1005 -0.08725"
                 rpy="0 0 0"/>
         <parent
                 link="base_Link"/>

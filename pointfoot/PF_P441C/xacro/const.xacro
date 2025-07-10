@@ -21,7 +21,7 @@
     <!-- kinematic value -->
     <!-- abad offset from base frame value -->
     <xacro:property name="abad_offset_x" value="0.039"/>
-    <xacro:property name="abad_offset_y" value="0.1095"/>
+    <xacro:property name="abad_offset_y" value="0.105"/>
     <xacro:property name="abad_offset_z" value="-0.08725"/>
     <!-- hip offset from abad frame value -->
     <xacro:property name="hip_offset_x" value="-0.077"/>

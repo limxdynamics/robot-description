@@ -8,7 +8,7 @@
 
         <joint name="abad_${name}_joint" type="revolute">
             <origin
-                xyz="${abad_offset_x} ${abad_offset_y*mirror} ${abad_offset_z}"
+                xyz="${abad_offset_x} ${(abad_offset_y+0.0045*mirror)*mirror} ${abad_offset_z}"
                 rpy="0 0 0"/>
             <parent link="base_Link"/>
             <child link="abad_${name}_Link"/>
